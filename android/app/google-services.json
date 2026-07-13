@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "342177049331",
+    "project_id": "world-corporate-putt-ch-c103t0",
+    "storage_bucket": "world-corporate-putt-ch-c103t0.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:342177049331:android:5e34798b74dffa72f42586",
+        "android_client_info": {
+          "package_name": "com.worldcorporateputtchallenge"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLk8b8pj3XgPf0fxJUnofvSpy8tjAoKbA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
