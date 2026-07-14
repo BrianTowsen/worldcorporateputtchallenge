@@ -44,13 +44,33 @@ class _HomeWidgetState extends State<HomeWidget> {
         key: scaffoldKey,
         resizeToAvoidBottomInset: false,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-        body: Container(
-          width: double.infinity,
-          height: double.infinity,
-          child: custom_widgets.HomeView(
-            width: double.infinity,
-            height: double.infinity,
-          ),
+        body: Stack(
+          children: [
+            Container(
+              width: double.infinity,
+              height: double.infinity,
+              child: custom_widgets.HomeView(
+                width: double.infinity,
+                height: double.infinity,
+                challengeLabel: 'MARCH CHALLENGE · LIVE',
+                countries: '36',
+                companies: '1,182',
+                raised: '\$1,2',
+              ),
+            ),
+            Align(
+              alignment: AlignmentDirectional(0.0, 1.0),
+              child: Container(
+                width: double.infinity,
+                height: 94.0,
+                child: custom_widgets.BottomNav(
+                  width: double.infinity,
+                  height: 94.0,
+                  currentTab: 0,
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );

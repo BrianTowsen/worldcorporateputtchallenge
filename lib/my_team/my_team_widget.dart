@@ -44,13 +44,29 @@ class _MyTeamWidgetState extends State<MyTeamWidget> {
         key: scaffoldKey,
         resizeToAvoidBottomInset: false,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
-        body: Container(
-          width: double.infinity,
-          height: double.infinity,
-          child: custom_widgets.MyTeamView(
-            width: double.infinity,
-            height: double.infinity,
-          ),
+        body: Stack(
+          children: [
+            Container(
+              width: double.infinity,
+              height: double.infinity,
+              child: custom_widgets.MyTeamView(
+                width: double.infinity,
+                height: double.infinity,
+              ),
+            ),
+            Align(
+              alignment: AlignmentDirectional(0.0, 1.0),
+              child: Container(
+                width: double.infinity,
+                height: 94.0,
+                child: custom_widgets.BottomNav(
+                  width: double.infinity,
+                  height: 94.0,
+                  currentTab: 2,
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );

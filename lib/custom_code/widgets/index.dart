@@ -42,3 +42,4 @@ export '/custom_code/widgets/company_standings_detail_view.dart'
 export '/custom_code/widgets/event_view.dart' show EventView;
 export '/custom_code/widgets/message_support_user_view.dart'
     show MessageSupportUserView;
+export '/custom_code/widgets/bottom_nav.dart' show BottomNav;
